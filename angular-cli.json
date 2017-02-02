@@ -5,6 +5,10 @@
   },
   "apps": [
     {
+      "styles": [
+        "styles.css",
+        "../bower_components/bootstrap/dist/css/bootstrap.css"
+      ],
       "root": "src",
       "outDir": "dist",
       "assets": [
