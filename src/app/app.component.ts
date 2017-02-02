@@ -13,7 +13,7 @@ import { EventService } from './event.service';
 
 export class AppComponent implements OnInit {
   title = "THRESHOLD'S FUTURE COMPANION APP!";
-    
+
   constructor(private eventService: EventService) {}
 
   ngOnInit() {
@@ -23,6 +23,6 @@ export class AppComponent implements OnInit {
     var countThresholdNum = +countThreshold;
     var countActualNum = 1;
     var newEvent: Event = new Event(name, location, link, date, description, imageUrl, categoryCause, categoryAction, price, countThresholdNum, countActualNum);
-    console.log(newEvent);
+    this.eventService.addEvent(newEvent);
   }
 }
