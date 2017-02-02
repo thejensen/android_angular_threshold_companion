@@ -2,6 +2,10 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
+## Firebase credentials
+
+(WIP) Instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names.
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

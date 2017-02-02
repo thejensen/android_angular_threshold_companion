@@ -1,3 +1,65 @@
 <h1>
   {{title}}
 </h1>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Event to Database</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Event Title</label>
+        <br>
+        <input #newTitle>
+      </div>
+      <div>
+        <label>Date</label>
+        <br>
+        <input #newDate>
+      </div>
+      <div>
+        <label>Location</label>
+        <br>
+        <input #newLocation>
+      </div>
+      <div>
+        <label>Link</label>
+        <br>
+        <input #newLink>
+      </div>
+      <div>
+        <label>ImageUrl</label>
+        <br>
+        <input #newImageUrl>
+      </div>
+      <div>
+        <label>Cause</label>
+        <br>
+        <input #newCause>
+      </div>
+      <div>
+        <label>Action</label>
+        <br>
+        <input #newAction>
+      </div>
+      <div>
+        <label>Price</label>
+        <br>
+        <input #newPrice>
+      </div>
+      <div>
+        <label>Description</label>
+        <br>
+        <input #newDescription>
+      </div>
+      <div>
+        <label>Threshold</label>
+        <br>
+        <input #newThreshold>
+      </div>
+
+      <button (click)="submitForm(newTitle.value, newLocation.value, newLink.value, newDate.value, newDescription.value, newImageUrl.value, newCause.value, newAction.value, newPrice.value, newThreshold.value); newTitle.value=''; newLocation.value=''; newLink.value=''; newDate.value=''; newDescription.value=''; newImageUrl.value=''; newCause.value=''; newAction.value=''; newPrice.value=''; newThreshold.value='';">Add</button>
+    </div>
+  </div>
+</div>
