@@ -1,5 +1,5 @@
-<h1>
-  {{title}}
+<h1 class="title">
+  THRESHOLD <br>(Future companion site)
 </h1>
 
 <div class="panel panel-default">
@@ -8,58 +8,65 @@
   </div>
   <div class="panel-body">
     <div>
-      <div>
-        <label>Event Title</label>
-        <br>
-        <input #newTitle>
+      <div class="row">
+        <div class="col-sm-3">
+          <label>Event Title</label>
+          <br>
+          <input #newTitle required="">
+        </div>
+        <div class="col-sm-3">
+          <label>Date</label>
+          <br>
+          <input #newDate>
+        </div>
+        <div class="col-sm-3">
+          <label>Location</label>
+          <br>
+          <input #newLocation>
+        </div>
+        <div class="col-sm-3">
+          <label>Link</label>
+          <br>
+          <input #newLink>
+        </div>
       </div>
-      <div>
-        <label>Date</label>
-        <br>
-        <input #newDate>
+      <div class="row">
+        <div class="col-sm-3">
+          <label>ImageUrl</label>
+          <br>
+          <input #newImageUrl>
+        </div>
+        <div class="col-sm-3">
+          <label>Cause</label>
+          <br>
+          <input #newCause>
+        </div>
+        <div class="col-sm-3">
+          <label>Action</label>
+          <br>
+          <input #newAction>
+        </div>
+        <div class="col-sm-3">
+          <label>Price</label>
+          <br>
+          <input #newPrice>
+        </div>
       </div>
-      <div>
-        <label>Location</label>
-        <br>
-        <input #newLocation>
-      </div>
-      <div>
-        <label>Link</label>
-        <br>
-        <input #newLink>
-      </div>
-      <div>
-        <label>ImageUrl</label>
-        <br>
-        <input #newImageUrl>
-      </div>
-      <div>
-        <label>Cause</label>
-        <br>
-        <input #newCause>
-      </div>
-      <div>
-        <label>Action</label>
-        <br>
-        <input #newAction>
-      </div>
-      <div>
-        <label>Price</label>
-        <br>
-        <input #newPrice>
-      </div>
-      <div>
-        <label>Description</label>
-        <br>
-        <input #newDescription>
-      </div>
-      <div>
-        <label>Threshold</label>
-        <br>
-        <input #newThreshold>
+      <div class="row">
+        <div class="col-sm-3">
+          <label>Description</label>
+          <br>
+          <input #newDescription>
+        </div>
+        <div class="col-sm-3">
+          <label>Threshold</label>
+          <br>
+          <input #newThreshold>
+        </div>
       </div>
 
-      <button (click)="submitForm(newTitle.value, newLocation.value, newLink.value, newDate.value, newDescription.value, newImageUrl.value, newCause.value, newAction.value, newPrice.value, newThreshold.value); newTitle.value=''; newLocation.value=''; newLink.value=''; newDate.value=''; newDescription.value=''; newImageUrl.value=''; newCause.value=''; newAction.value=''; newPrice.value=''; newThreshold.value='';">Add</button>
+
+      <button class="btn btn-primary"(click)="submitForm(newTitle.value, newLocation.value, newLink.value, newDate.value, newDescription.value, newImageUrl.value, newCause.value, newAction.value, newPrice.value, newThreshold.value); newTitle.value=''; newLocation.value=''; newLink.value=''; newDate.value=''; newDescription.value=''; newImageUrl.value=''; newCause.value=''; newAction.value=''; newPrice.value=''; newThreshold.value='';">Add</button>
     </div>
   </div>
 </div>

@@ -1,3 +1,19 @@
-.panel-heading, .panel-body {
-  margin: 20px;
+
+.title, .panel-heading {
+    font-family: sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.panel-body {
+  margin-left: 7em;
+}
+
+label {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+button {
+  margin: 1em;
 }

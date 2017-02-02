@@ -12,8 +12,7 @@ import { EventService } from './event.service';
 })
 
 export class AppComponent implements OnInit {
-  title = "THRESHOLD'S FUTURE COMPANION SITE!";
-
+  
   constructor(private eventService: EventService) {}
 
   ngOnInit() {
