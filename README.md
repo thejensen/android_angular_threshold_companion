@@ -9,6 +9,19 @@ Please https://thejensen.github.io//angular-threshold/ to view it in all it's fo
 
 ## Firebase credentials
 
+https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup
+
+* Create api-keys.ts in src/app
+add:
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+
+
 (WIP) Instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names.
 
 ## Development server
