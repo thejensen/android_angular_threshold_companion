@@ -2,8 +2,8 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
-Please https://thejensen.github.io//angular-threshold/ to view it in all it's form-y glory!
-
+Please https://thejensen.github.io//angular-threshold// to view it in all it's form-y glory!
+(May not work, gh-pages aren't cooperating...).
 
 # To contribute to the project...
 
