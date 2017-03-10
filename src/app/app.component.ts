@@ -12,7 +12,7 @@ import { EventService } from './event.service';
 })
 
 export class AppComponent implements OnInit {
-  
+
   constructor(private eventService: EventService) {}
 
   ngOnInit() {
@@ -21,7 +21,8 @@ export class AppComponent implements OnInit {
   submitForm(name: string, location: string, link: string, date: string, description: string, imageUrl: string, categoryCause: string, categoryAction: string, price: string, countThreshold: string) {
     var countThresholdNum = +countThreshold;
     var countActualNum = 1;
-    var newEvent: Event = new Event(name, location, link, date, description, imageUrl, categoryCause, categoryAction, price, countThresholdNum, countActualNum);
+    var happening = 0;
+    var newEvent: Event = new Event(name, location, link, date, description, imageUrl, categoryCause, categoryAction, price, countThresholdNum, countActualNum, happening);
     this.eventService.addEvent(newEvent);
   }
 }
